@@ -1,0 +1,168 @@
+body {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.montserrat-medium {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #392c72;
+    padding-left: 7px;
+}
+
+.montserrat-regular {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #4f4f4f;
+}
+
+.montserrat-regular-upprecase {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #828282;
+    margin-left: 15px;
+}
+
+/* .......HEADER............ */
+
+.header {
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 1170px;
+    height: 80px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+    background: #fff;
+    margin: 35px auto 68px auto;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 22px;
+
+}
+
+.header__list {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.header__lang {
+    margin-left: auto;
+    margin-right: 50px;
+    padding-top: 5px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #4f4f4f;
+}
+
+.header__avatar {
+    margin-left: 50px;
+}
+
+
+/* ..............MAIN................. */
+
+.content {
+    display: flex;
+    position: relative;
+}
+
+main {
+    width: 1220px;
+    height: 676px;
+    margin: 0 auto;
+}
+
+/* <!-- .........SIDEBAR................ --> */
+.sidebar {
+    padding: 30px 0px;
+    width: 220px;
+    height: 1033px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+    background: #fff;
+    position: absolute;
+    top: -203px;
+}
+
+.sidebar__logo {
+    display: flex;
+    align-items: center;
+    padding: 0 15px 40px 15px;
+}
+
+
+.sidebar__logo label {
+    padding-left: 20px;
+    background: white;
+}
+
+.sidebar__dashboard {
+    margin-bottom: 30px;
+    padding: 10px 15px;
+}
+
+.sidebar__dashboard:hover {
+    box-shadow: 0 0 20px 0 rgba(158, 140, 252, 0.7);
+    background: #9e8cfc;
+}
+
+.sidebar__toggle img {
+    padding-right: 20px;
+}
+
+.sidebar__list {
+    display: grid;
+    margin: 15px 0 30px 0;
+}
+
+.sidebar__list li {
+    padding: 10px 15px;
+}
+
+
+.sidebar__list li:hover {
+    box-shadow: 0 0 20px 0 rgba(158, 140, 252, 0.7);
+    background: #9e8cfc;
+}
+
+.sidebar:has(#toggle:checked) {
+    width: 75px;
+}
+
+.sidebar:has(#toggle:checked) span {
+    display: none;
+}
+
+
+
+.sidebar:has(#toggle:checked) .toggle-btn svg {
+    rotate: 180deg;
+}
+
+.sidebar__line img {
+    display: none;
+}
+
+ .sidebar:has(#toggle:checked) .sidebar__line img {
+    display: inline;
+    margin-left: 15px;
+ }
+
+ .sidebar:has(#toggle:checked) .sidebar__line h2 {
+    display: none;
+ }

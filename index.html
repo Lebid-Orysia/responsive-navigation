@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>responsive-navigation</title>
+</head>
+
+<body>
+    <!-- /* .......HEADER............ */ -->
+    <header class="header">
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__item">
+                    <a href="#">
+                        <img src="icons/header/mail.svg" alt="bubble">
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="#">
+                        <img src="icons/header/bubble.svg" alt="chat">
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="#">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_56)">
+                                <path
+                                    d="M23.8339 2.4375H20.3125V0.8125C20.3125 0.363188 19.9493 0 19.5 0C19.0507 0 18.6875 0.363188 18.6875 0.8125V2.4375H13.8125V0.8125C13.8125 0.363188 13.4485 0 13 0C12.5515 0 12.1875 0.363188 12.1875 0.8125V2.4375H7.3125V0.8125C7.3125 0.363188 6.9485 0 6.5 0C6.0515 0 5.6875 0.363188 5.6875 0.8125V2.4375H2.16694C0.970125 2.4375 0 3.40681 0 4.60362V23.8331C0 25.0299 0.970125 26 2.16694 26H23.8339C25.0307 26 26 25.0299 26 23.8331V4.60362C26 3.40681 25.0307 2.4375 23.8339 2.4375ZM24.375 23.8331C24.375 24.1321 24.1321 24.375 23.8339 24.375H2.16694C1.86794 24.375 1.625 24.1321 1.625 23.8331V4.60362C1.625 4.30544 1.86794 4.0625 2.16694 4.0625H5.6875V5.6875C5.6875 6.13681 6.0515 6.5 6.5 6.5C6.9485 6.5 7.3125 6.13681 7.3125 5.6875V4.0625H12.1875V5.6875C12.1875 6.13681 12.5515 6.5 13 6.5C13.4485 6.5 13.8125 6.13681 13.8125 5.6875V4.0625H18.6875V5.6875C18.6875 6.13681 19.0507 6.5 19.5 6.5C19.9493 6.5 20.3125 6.13681 20.3125 5.6875V4.0625H23.8339C24.1321 4.0625 24.375 4.30544 24.375 4.60362V23.8331ZM5.6875 9.75H8.9375V12.1875H5.6875V9.75ZM5.6875 13.8125H8.9375V16.25H5.6875V13.8125ZM5.6875 17.875H8.9375V20.3125H5.6875V17.875ZM11.375 17.875H14.625V20.3125H11.375V17.875ZM11.375 13.8125H14.625V16.25H11.375V13.8125ZM11.375 9.75H14.625V12.1875H11.375V9.75ZM17.0625 17.875H20.3125V20.3125H17.0625V17.875ZM17.0625 13.8125H20.3125V16.25H17.0625V13.8125ZM17.0625 9.75H20.3125V12.1875H17.0625V9.75Z"
+                                    fill="#4F4F4F" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1_56">
+                                    <rect width="26" height="26" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="#">
+                        <img src="icons/header/star.svg" alt="star">
+                    </a>
+                </li>
+            </ul>
+
+            <a href="" class="header__lang">
+                <img src="icons/header/lang-icon.svg" alt="lang-icon">English
+            </a>
+            <ul class="header__list">
+
+                <li class="header__item">
+                    <label class="theme-switch" for="switch">
+                        <input type="checkbox" id="switch" hidden>
+                        <img src="icons/header/change-theme.svg" alt="change-theme">
+                    </label>
+                </li>
+                <li class="header__item">
+                    <a href="">
+                        <img src="icons/header/search.svg" alt="search">
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="">
+                        <img src="icons/header/set.svg" alt="set">
+                    </a>
+                </li>
+
+            </ul>
+
+            <a href="" class="header__avatar">
+                <img src="icons/header/Avatar.png" alt="Avatar">
+            </a>
+
+        </nav>
+    </header>
+
+    <!-- ..............MAIN................. -->
+    <section class="content">
+
+        <main class="main">
+            <img src="bg.png" alt="background">
+        </main>
+        <!-- .........SIDEBAR................ -->
+        <aside class="sidebar">
+            <div class="sidebar__logo">
+                <img src="icons/sidebar/icon.svg" alt="logo">
+                <span class="montserrat-medium">LightBoard</span>
+                <label for="toggle" class="toggle-btn">
+                    <input type="checkbox" id="toggle" hidden><svg width="20" height="20" viewBox="0 0 20 20"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8.95833 10L11.3562 7.38958C11.5604 7.18333 11.5604 6.84896 11.3562 6.64167C11.1521 6.43646 10.8198 6.43646 10.6167 6.64167L7.69271 9.625C7.48854 9.83229 7.48854 10.1667 7.69271 10.3719L10.6167 13.3552C10.8198 13.5625 11.1521 13.5615 11.3562 13.3552C11.5604 13.15 11.5604 12.8156 11.3562 12.6083L8.95833 10ZM10 0C4.47708 0 0 4.47708 0 10C0 15.524 4.47708 20 10 20C15.5229 20 20 15.524 20 10C20 4.47708 15.5229 0 10 0ZM10 18.7021C5.19479 18.7021 1.29792 14.8062 1.29792 10C1.29792 5.19375 5.19479 1.29792 10 1.29792C14.8073 1.29792 18.7021 5.19375 18.7021 10C18.7021 14.8062 14.8073 18.7021 10 18.7021Z"
+                            fill="#392C72" />
+                    </svg></label>
+            </div>
+
+            <div class="sidebar__toggle">
+                <div class="sidebar__dashboard">
+                    <img src="icons/sidebar/dashboard.svg" alt="dashboard">
+                    <span class="montserrat-regular">Dashboard</span><br>
+                </div>
+
+                <div class="sidebar__line">
+                    <h2 class="montserrat-regular-upprecase">Apps</h2>
+                    <img src="icons/sidebar/line.svg" alt="line">
+                </div>
+                <ul class="sidebar__list">
+                    <li>
+                        <a href="" class="montserrat-regular">
+                            <img src="icons/sidebar/Group 2.svg" alt="" style="padding-right: 5px;"><span>Email</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="montserrat-regular">
+                            <img src="icons/sidebar/Group 1.svg" alt="" style="padding-right: 5px;"><span>Chats</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="montserrat-regular">
+                            <img src="icons/sidebar/Group 4.svg" alt=""
+                                style="padding-right: 5px;"><span>Calendar</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="montserrat-regular">
+                            <img src="icons/sidebar/news.svg" alt=""><span>News</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="montserrat-regular">
+                            <img src="icons/sidebar/study 1.svg" alt=""><span>Knowledge</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="montserrat-regular">
+                            <img src="icons/sidebar/stack.svg" alt=""><span>File manager</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="montserrat-regular">
+                            <img src="icons/sidebar/location.svg" alt=""><span>Leaflet Maps</span>
+                        </a>
+                    </li>
+                </ul>
+
+                 <div class="sidebar__line">
+                    <h2 class="montserrat-regular-upprecase">Auth pages</h2>
+                    <img src="icons/sidebar/line.svg" alt="line">
+                </div>
+
+                <ul class="sidebar__list">
+                    <li>
+                        <a href="" class="montserrat-regular">
+                            <img src="icons/sidebar/profile.svg" alt=""><span>Profile</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="montserrat-regular">
+                            <img src="icons/sidebar/lock.svg" alt=""><span>Permissions</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="montserrat-regular">
+                            <img src="icons/sidebar/log-out.svg" alt=""><span>Log Out</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="sidebar__line">
+                    <h2 class="montserrat-regular-upprecase">User Interface</h2>
+                    <img src="icons/sidebar/line.svg" alt="line">
+                </div>
+                
+                <ul class="sidebar__list">
+                    <li>
+                        <a href="" class="montserrat-regular">
+                            <img src="icons/sidebar/eye.svg" alt=""><span>Feather</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="montserrat-regular">
+                            <img src="icons/sidebar/wallet.svg" alt=""><span>Ecommerce</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="montserrat-regular">
+                            <img src="icons/sidebar/lab.svg" alt=""><span>Components</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="montserrat-regular">
+                            <img src="icons/sidebar/page.svg" alt=""><span>Pages</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="montserrat-regular">
+                            <img src="icons/sidebar/pen.svg" alt=""><span>Editor</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </section>
+</body>
+
+</html>
