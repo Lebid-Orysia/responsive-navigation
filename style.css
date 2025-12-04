@@ -300,3 +300,4 @@ body:has(#theme-toggle:checked) .sidebar__dashboard svg path {
 body:has(#theme-toggle:checked) .sidebar__logo label svg path {
     fill: #9788d5;
 }
+
